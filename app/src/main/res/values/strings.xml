@@ -3,4 +3,12 @@
 
     <string name="no_data">Нет данных для отображения</string>
 
+
+    <!-- menu-->
+    <string name="text_nav_home">Главная</string>
+    <string name="text_nav_orders">Мои заказы</string>
+    <string name="text_nav_rahmet">Рахмет</string>
+
+    <string name="takeout">Заказ с собой</string>
+
 </resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_main"
+        android:contentDescription="@string/text_nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/text_nav_home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_notification"
+        android:contentDescription="@string/text_nav_orders"
+        android:enabled="true"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/text_nav_orders"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_compensation"
+        android:contentDescription="@string/text_nav_rahmet"
+        android:enabled="true"
+        android:icon="@drawable/ic_rahmet"
+        android:title="@string/text_nav_rahmet"
+        app:showAsAction="always" />
+
+</menu>

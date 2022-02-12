@@ -41,62 +41,9 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initView() {
-//        binding.constraintLayout.layoutTransition?.enableTransitionType(LayoutTransition.CHANGING)
 
         navController = findNavController(R.id.nav_host_fragment)
 
-        initToolbar()
-        initOnDestinationChangedListener()
-        initNavigationView()
-    }
-
-    private fun initToolbar() {
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.aboutFragment
-            ),
-            binding.drawerLayout
-        )
-
-        setSupportActionBar(binding.toolbar)
-        binding.toolbar.setupWithNavController(navController, appBarConfiguration)
-    }
-
-    private fun initOnDestinationChangedListener() {
-        navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            when (destination.id) {
-                R.id.aboutFragment
-                -> {
-                    //do nothing
-                }
-            }
-        }
-    }
-
-    private fun initNavigationView() {
-        binding.navigationView.background.alpha = 90
-        binding.navigationView.setupWithNavController(navController)
-        binding.navigationView.setNavigationItemSelectedListener {
-            when (it.itemId) {
-                else -> {
-                    closeDrawer()
-                    val result = NavigationUI.onNavDestinationSelected(it, navController)
-                    binding.navigationView.setCheckedItem(it.itemId)
-                    result
-                }
-            }
-        }
-    }
-
-    private fun openDrawer() {
-        binding.drawerLayout.openDrawer(binding.navigationView, true)
-    }
-
-    private fun closeDrawer() {
-        GlobalScope.launch(Dispatchers.Main) {
-            delay(100)
-            binding.drawerLayout.closeDrawer(binding.navigationView, true)
-        }
     }
 
 }

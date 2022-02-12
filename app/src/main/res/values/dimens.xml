@@ -52,6 +52,7 @@
     <dimen name="dp_48">48dp</dimen>
     <dimen name="dp_56">56dp</dimen>
     <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
     <dimen name="dp_160">160dp</dimen>
 
     <dimen name="bottom_navigation_view_height">56dp</dimen>

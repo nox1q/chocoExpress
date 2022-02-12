@@ -14,4 +14,18 @@
         <item name="android:textColorSecondary">#FFFFFF</item> <!-- for check state -->
     </style>
 
+    <style name="AppBarTextViewStyle" parent="Font.Medium">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+
+        <item name="autoSizeMaxTextSize">@dimen/sp_20</item>
+        <item name="autoSizeMinTextSize">@dimen/sp_12</item>
+        <item name="autoSizeTextType">uniform</item>
+
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+    </style>
+
 </resources>

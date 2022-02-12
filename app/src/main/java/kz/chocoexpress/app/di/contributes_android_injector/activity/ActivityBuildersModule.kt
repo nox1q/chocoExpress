@@ -3,6 +3,7 @@ package kz.chocoexpress.app.di.contributes_android_injector.activity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import kz.chocoexpress.app.di.contributes_android_injector.fragment.AboutFragmentsBuildersModule
+import kz.chocoexpress.app.di.contributes_android_injector.fragment.HomeFragmentsBuildersModule
 import kz.chocoexpress.app.di.contributes_android_injector.fragment.SplashFragmentsBuildersModule
 import kz.chocoexpress.app.ui.activities.main.MainActivity
 import kz.chocoexpress.app.ui.activities.splash.SplashActivity
@@ -19,7 +20,8 @@ abstract class ActivityBuildersModule {
 
     @ContributesAndroidInjector(
         modules = [
-            AboutFragmentsBuildersModule::class
+            AboutFragmentsBuildersModule::class,
+            HomeFragmentsBuildersModule::class
         ]
     )
     internal abstract fun mainActivity(): MainActivity
